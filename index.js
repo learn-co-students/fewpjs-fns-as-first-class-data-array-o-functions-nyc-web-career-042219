@@ -34,14 +34,9 @@ let unleashDog = function(dogName, dogBreed) {
     return str;
 };
 
-// let routine = [wakeDog(dogName, dogBreed), leashDog(dogName, dogBreed), walkToPark(dogName, dogBreed), throwFrisbee(dogName, dogBreed), walkHome(dogName, dogBreed), unleashDog(dogName, dogBreed)]
-
 let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
 let exerciseDog = function (dogName, dogBreed) {
-    // for(let i=0, i<routine.length, i++){
-    //     return routine[i](dogName, dogBreed)
-    // }
     let result = routine.map(func => func(dogName, dogBreed));
     return result;
 }
